@@ -15,7 +15,7 @@ const Navbar =()=>{
             <div className={style.nav_items}>
                 <ul className={open ? `${style.menu_items} ${style.open}`:style.menu_items}>
                     <li>
-                        <a href="#" className={style.nav_link}>Services</a>
+                        <a href="#" className={style.nav_link}>Specializations</a>
                     </li>
                     <li>
                         <a href="#" className={style.nav_link}>Works</a>
