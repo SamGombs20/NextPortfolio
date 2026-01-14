@@ -14,6 +14,9 @@ export const Banner = () => {
                     <p className={style.years}>2</p>
                     <p>YEARS <br />EXPERIENCE</p>
                 </div>
+                <div className={style.banner_img}>
+
+                </div>
             </div>
         </div>
     );
