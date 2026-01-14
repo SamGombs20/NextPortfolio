@@ -31,3 +31,21 @@
     line-height: 1.2rem;
     font-size: 0.9rem;
 }
+.email_container{
+    margin-top: 5rem;
+}
+.email_container p{
+    color: var(--accent-orange);
+    text-decoration: underline;
+    font-weight: 500;
+}
+.experience_container{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.years{
+    font-size: 3.5rem;
+    font-weight: 500;
+}

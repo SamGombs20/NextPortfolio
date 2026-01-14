@@ -7,6 +7,13 @@ export const Banner = () => {
                     <p className={style.intro_name}>Hey There, <br />I'm Joshua</p>
                     <p className={style.intro_desc}>I build mobile apps, web applications, and machine learning models that solve real problems. I love what I do.  </p>
                 </div>
+                <div className={style.email_container}>
+                    <p>gombajosh18@gmail.com</p>
+                </div>
+                <div className={style.experience_container}>
+                    <p className={style.years}>2</p>
+                    <p>YEARS <br />EXPERIENCE</p>
+                </div>
             </div>
         </div>
     );
