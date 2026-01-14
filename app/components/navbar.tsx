@@ -8,20 +8,20 @@ const Navbar =()=>{
         setOpen(!open)
     }
     return(
-        <nav className={style.navbar}>
+        <div className={style.navbar}>
             <div>
                 <p className={style.nav_title}>Joshua</p>
             </div>
             <div className={style.nav_items}>
                 <ul className={open ? `${style.menu_items} ${style.open}`:style.menu_items}>
                     <li>
-                        <a href="#" className={style.nav_link}>Specializations</a>
+                        <a href="#" className={style.nav_link}>SERVICES</a>
                     </li>
                     <li>
-                        <a href="#" className={style.nav_link}>Works</a>
+                        <a href="#" className={style.nav_link}>WORKS</a>
                     </li>
                     <li>
-                        <a href="#" className={style.nav_link}>Experience</a>
+                        <a href="#" className={style.nav_link}>EXPERIENCE</a>
                     </li>
                 </ul>
             </div>
@@ -31,7 +31,7 @@ const Navbar =()=>{
             <div className={style.nav_toggle} onClick={handleClick}>
                 <i className={open? `fas fa-times`:`fas fa-bars`}></i>
             </div>
-        </nav>
+        </div>
     )
 }
 export default Navbar
