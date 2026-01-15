@@ -3,12 +3,13 @@
     backdrop-filter: blur(10px);
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.06); */
     top: 0;
+        background-color: var(--transparent-white);
     position: fixed;
     /* padding: 1rem; */
     margin: 0 auto;
     left: 0;
     right: 0;
-    max-width: 1800px;
+    /* max-width: 1800px; */
 }
 
 .navbar {
@@ -21,7 +22,6 @@
     position: relative;
     padding: 1rem;
     z-index: 99;
-    /* background-color: var(--primary-light); */
     color: var(--primary-dark);
 
 }
@@ -82,9 +82,7 @@
     }
 }
 @media (max-width:450px) {
-    /* .main{
-        backdrop-filter: none;
-    } */
+    
     .nav_toggle{
         display: block;
     }
@@ -96,7 +94,6 @@
         position: absolute;
         background-color: white;
         top: 0;
-        /* left: 0; */
         margin: 0;
         gap:2.5rem;
         z-index: -1;
