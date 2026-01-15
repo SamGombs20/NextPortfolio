@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react"
 import style from "../styles/navbar.module.css"
+import { FaBars, FaTimes } from "react-icons/fa"
 const Navbar = () => {
     const [open, setOpen] = useState(false)
 
@@ -30,7 +31,7 @@ const Navbar = () => {
                     <p>+254 115 185 192</p>
                 </div>
                 <div className={style.nav_toggle} onClick={handleClick}>
-                    <i className={open ? `fas fa-times` : `fas fa-bars`}></i>
+                    {open ?<FaTimes/>:<FaBars/>}
                 </div>
             </div>
         </div>
