@@ -1,3 +1,4 @@
+import { FaUserGraduate } from "react-icons/fa";
 import style from "../styles/banner.module.css"
 export const Banner = () => {
     return (
@@ -12,14 +13,20 @@ export const Banner = () => {
                 </div>
                 <div className={style.additional_info}>
                     <div className={style.email_container}>
-                    <p>gombajosh18@gmail.com</p>
+                        <p>gombajosh18@gmail.com</p>
+                    </div>
+                    <div className={style.experience_container}>
+                        <div className={style.experience_child}>
+                            <p className={style.years}>2</p>
+                            <p>YEARS <br />EXPERIENCE</p>
+                        </div>
+                        <div className={`${style.experience_child} ${style.education}`}>
+                            <FaUserGraduate className={style.icon}/>
+                            <p>BSc. Computer Science</p>
+                        </div>
+                    </div>
                 </div>
-                <div className={style.experience_container}>
-                    <p className={style.years}>2</p>
-                    <p>YEARS <br />EXPERIENCE</p>
-                </div>
-                </div>
-                
+
             </div>
         </div>
     );

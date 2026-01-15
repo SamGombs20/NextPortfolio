@@ -85,9 +85,7 @@
 }
 
 @media (max-width:450px) {
-    .main {
-        /* backdrop-filter: none; */
-    }
+   
 
     .nav_toggle {
         display: block;
