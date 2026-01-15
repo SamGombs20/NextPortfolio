@@ -14,7 +14,8 @@ const Navbar = () => {
                 <div>
                     <p className={style.nav_title}>Joshua</p>
                 </div>
-                <div className={style.nav_items}>
+                <div className={style.menu_items}>
+                    <div className={`${style.nav_items} ${style.responsive}`}>
                     <ul className={open ? `${style.menu_items} ${style.open}` : style.menu_items}>
                         <li>
                             <a href="#" className={style.nav_link}>SERVICES</a>
@@ -27,8 +28,9 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={style.nav_contact}>
+                <div className={`${style.nav_contact} ${style.responsive}`}>
                     <p>+254 115 185 192</p>
+                </div>
                 </div>
                 <div className={style.nav_toggle} onClick={handleClick}>
                     {open ?<FaTimes/>:<FaBars/>}
