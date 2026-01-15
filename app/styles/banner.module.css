@@ -1,7 +1,7 @@
 .banner_container {
     width: 100%;
-    height: 100vh;
-    background: url("../../public/portfolio_img.webp");
+    min-height: 100vh;
+    background-image: url("../../public/portfolio_img.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -11,7 +11,7 @@
 }
 
 .main {
-    max-width:900px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;
@@ -31,7 +31,7 @@
 .intro_name {
     font-size: 3.5rem;
     line-height: 4.5rem;
-    min-width: 300px;
+    min-width: 250px;
     font-weight: 500;
     font-family: var(--font-poppins);
     color: var(--accent-green);
@@ -65,23 +65,55 @@
     font-weight: 500;
 }
 
-/* .banner_img {
-    background: url("../../public/portfolio_img.webp");
-    height: 70vh;
+.banner_img {
+    height: 60vh;
     width: 100%;
-    display:;
-
-} */
-@media (max-width:770px) {
-       .banner_container{
+    overflow: hidden;
+    display: none;
+}
+@media (max-width:830px) {
+    .banner_container {
+        background-image: none;
+    }
+    .main{
+        justify-content: center;
+    }
+    .intro{
+        gap: 2rem;
+    }
+    .banner_img {
+        background: url("../../public/portfolio_banner.webp");
+        display: inline;
+        background-position: center;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-bottom: 1px solid var(--accent-green);
+        /* width: 300px; */
+    }
+    .email_container{
+        margin-top: 1rem;
+    }
+    .experience_container{
+        margin-top: 0.5rem;
+    }
+    .additional_info{
+        display: flex;
         flex-direction: column;
-        align-items: center;
-       } 
-       /* .banner_img {
-    background: url("../../public/portfolio_img.webp");
-    height: 70vh;
-    width: 100%;
-    display:;
-
-} */
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width:600px) {
+    .intro{
+        margin-left: 4rem;
+    }
+    .banner_img{
+        height: 65vh;
+    }
+    .additional_info{
+        display: none;
+    }
 }
