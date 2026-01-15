@@ -14,9 +14,9 @@ const Navbar = () => {
                 <div>
                     <p className={style.nav_title}>Joshua</p>
                 </div>
-                <div className={style.menu_items}>
+                <div className={`${style.menu_items}`}>
                     <div className={`${style.nav_items} ${style.responsive}`}>
-                    <ul className={open ? `${style.menu_items} ${style.open}` : style.menu_items}>
+                    <ul className={`${style.menu_items} ${open ? style.active:""}`}>
                         <li>
                             <a href="#" className={style.nav_link}>SERVICES</a>
                         </li>
