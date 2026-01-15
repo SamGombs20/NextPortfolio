@@ -15,25 +15,25 @@ const Navbar = () => {
                     <p className={style.nav_title}>Joshua</p>
                 </div>
                 <div className={`${style.menu_items}`}>
-                    <div className={`${style.nav_items} ${style.responsive}`}>
-                    <ul className={`${style.menu_items} ${open ? style.active:""}`}>
-                        <li>
-                            <a href="#" className={style.nav_link}>SERVICES</a>
-                        </li>
-                        <li>
-                            <a href="#" className={style.nav_link}>WORKS</a>
-                        </li>
-                        <li>
-                            <a href="#" className={style.nav_link}>EXPERIENCE</a>
-                        </li>
-                    </ul>
-                </div>
-                <div className={`${style.nav_contact} ${style.responsive}`}>
-                    <p>+254 115 185 192</p>
-                </div>
+                    <div className={`${style.responsive}`}>
+                        <ul className={`${style.nav_items} ${open ? style.active : style.inactive}`}>
+                            <li>
+                                <a href="#" className={style.nav_link}>SERVICES</a>
+                            </li>
+                            <li>
+                                <a href="#" className={style.nav_link}>WORKS</a>
+                            </li>
+                            <li>
+                                <a href="#" className={style.nav_link}>EXPERIENCE</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className={`${style.nav_contact} ${style.responsive}`}>
+                        <p>+254 115 185 192</p>
+                    </div>
                 </div>
                 <div className={style.nav_toggle} onClick={handleClick}>
-                    {open ?<FaTimes/>:<FaBars/>}
+                    {open ? <FaTimes /> : <FaBars />}
                 </div>
             </div>
         </div>
