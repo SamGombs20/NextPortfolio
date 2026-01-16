@@ -11,6 +11,10 @@ export const Services = () => {
                     <p>I build modern, responsive web and mobile applications that solve real problems and deliver great user experience. <br />
                         I create fast intuitive interfaces - from interactive dashboards and health tools to news platforms and loan management systems to specialized e-commerce systems. I connect them to robust backends and focus on clean, maintainable code using Git and Agile workflows.<br />
                         I thrive in focused teams, delivering products that solve problems and provide excellent user experiences.</p>
+                        <div>
+                            <p>18+</p>
+                            <p>Projects completed</p>
+                        </div>
                 </div>
                 <div className={style.sub_professions_container}>
                     <div className={style.sub_profession}>

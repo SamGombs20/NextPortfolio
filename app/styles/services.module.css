@@ -30,6 +30,8 @@
     padding: 1rem;
     gap: 1rem;
     border: 1px solid var(--primary-light);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
 }
 .icon{
     font-size: 2rem;
