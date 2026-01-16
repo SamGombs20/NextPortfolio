@@ -1,5 +1,5 @@
 .main{
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    max-width: 450px;
+    
     
 }
 .sub_profession{
@@ -38,8 +38,10 @@
     padding: 1.5rem 1rem;
     gap: 2rem;
     border: 1px solid var(--primary-light);
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    max-width: 450px;
     box-shadow: var(--box-shadow);
+    background-color: var(--primary-lighter);
 }
 .icon{
     font-size: 2rem;
