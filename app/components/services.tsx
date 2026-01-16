@@ -8,39 +8,39 @@ export const Services = () => {
             <div className={style.profession_container}>
                 <div className={style.profession}>
                     <p className={style.title}>What I Do</p>
-                    <p>I build modern, responsive web and mobile applications that solve real problems and deliver great user experience. <br />
+                    <p>I build modern, responsive web and mobile applications that solve real problems and deliver great user experience. <br /> <br />
                         I create fast intuitive interfaces - from interactive dashboards and health tools to news platforms and loan management systems to specialized e-commerce systems. I connect them to robust backends and focus on clean, maintainable code using Git and Agile workflows.<br />
-                        I thrive in focused teams, delivering products that solve problems and provide excellent user experiences.</p>
+                        </p>
                         <div>
-                            <p>18+</p>
+                            <p className={style.proj_number}>17+</p>
                             <p>Projects completed</p>
                         </div>
                 </div>
                 <div className={style.sub_professions_container}>
                     <div className={style.sub_profession}>
-                        <div>
-                            <TbDeviceImac className={style.icon} />
+                        <div className={`${style.icon} ${style.orange}`}>
+                            <TbDeviceImac  />
                         </div>
                         <div>
-                            <p>Web Development</p>
+                            <p className={style.sub_profession_title}>Web Development</p>
                             <p>11 projects</p>
                         </div>
                     </div>
                     <div className={style.sub_profession}>
-                        <div>
-                            <CiMobile3 className={style.icon}/>
+                        <div className={style.icon}>
+                            <CiMobile3 />
                         </div>
                         <div>
-                            <p>Mobile App Development</p>
+                            <p className={style.sub_profession_title}>Mobile App Development</p>
                             <p>4 projects</p>
                         </div>
                     </div>
                     <div className={style.sub_profession}>
-                        <div>
-                            <LuBrainCircuit className={style.icon}/>
+                        <div className={`${style.icon} ${style.brown}`}>
+                            <LuBrainCircuit />
                         </div>
                         <div>
-                            <p>ML Models</p>
+                            <p className={style.sub_profession_title}>ML Models</p>
                             <p>3 projects</p>
                         </div>
                     </div>
