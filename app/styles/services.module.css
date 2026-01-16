@@ -1,4 +1,36 @@
 .main{
     max-width: 1100px;
     height: 60vh;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.profession_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    align-items: center;
+}
+.title{
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--accent-green);
+    margin-bottom: 1rem;
+}
+.profession{
+    max-width: 500px;
+}
+.sub_professions_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.sub_profession{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px solid var(--primary-light);
+}
+.icon{
+    font-size: 2rem;
 }
