@@ -6,7 +6,7 @@ export const Services = () => {
     return (
         <div className={style.main}>
             <div className={style.profession_container}>
-                <div className={style.profession}>
+                <div className={`${style.profession} ${style.first}`}>
                     <p className={style.title}>What I Do</p>
                     <p>I build modern, responsive web and mobile applications that solve real problems and deliver great user experience. <br /> <br />
                         I create fast intuitive interfaces - from interactive dashboards and health tools to news platforms and loan management systems to specialized e-commerce systems. I connect them to robust backends and focus on clean, maintainable code using Git and Agile workflows.<br />
@@ -16,7 +16,7 @@ export const Services = () => {
                             <p>Projects completed</p>
                         </div>
                 </div>
-                <div className={style.sub_professions_container}>
+                <div className={`${style.second} ${style.sub_professions_container}`}>
                     <div className={style.sub_profession}>
                         <div className={`${style.icon} ${style.orange}`}>
                             <TbDeviceImac  />
