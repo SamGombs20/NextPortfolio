@@ -1,12 +1,12 @@
 .main{
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
 }
 .profession_container{
     display: flex;
     flex-direction: column;
-    margin: 6rem 0;
+    margin: 10rem 0;
     align-items: center;
     gap: 2rem;
     transition: all 0.4 ease-in-out;
@@ -15,9 +15,18 @@
     font-size: 4rem;
     font-weight: 600;
     color: var(--accent-green);
+    margin-bottom: 1rem;
 }
 .profession{
     max-width: 450px;
+    position: relative;
+    z-index: -2;
+}
+.proj_container{
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: -2;
 }
 .proj_number{
     font-size: 3rem;
@@ -25,21 +34,27 @@
     color: var(--accent-green);
     margin-top: 0.5rem;
 }
+.proj_container .completed_text{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
 .sub_professions_container{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
+    margin-top: 6rem;
     
     
 }
 .sub_profession{
     display: flex;
     align-items: center;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 1rem 3rem;
     gap: 2rem;
     border: 1px solid var(--primary-light);
     border-radius: 1rem;
-    max-width: 450px;
+    min-width: 300px;
     box-shadow: var(--box-shadow);
     background-color: var(--primary-lighter);
 }
@@ -68,10 +83,15 @@
 @media (min-width:776px) {
     .profession_container{
         flex-direction: row;
-        justify-content: space-between;
-        gap: 0;
+        justify-content: space-evenly;
+        gap: 0.5rem;
+        align-items: inherit;
     }
     .first{
         order: 2;
+        margin-left: auto;
+    }
+    .sub_professions_container{
+        margin-top: 0;
     }
 }

@@ -1,7 +1,13 @@
 .main{
-    min-height: 20vh;
     background-color: var(--primary-light);
 }
-.experiences_container{
-    
+.experience_container{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.title{
+    font-size: 3.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--accent-green);
 }

@@ -20,10 +20,10 @@ export const Banner = () => {
                             <p className={style.years}>2</p>
                             <p>YEARS <br />EXPERIENCE</p>
                         </div>
-                        <div className={`${style.experience_child} ${style.education}`}>
+                        {/* <div className={`${style.experience_child} ${style.education}`}>
                             <FaUserGraduate className={style.icon}/>
                             <p>BSc. Computer Science</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 

@@ -5,7 +5,7 @@ import style from './styles/home.module.css'
 export default function Home() {
   return (
     <div>
-      {/* <Banner/> */}
+      <Banner/>
       <Services/>
       <Experience/>
     </div>
