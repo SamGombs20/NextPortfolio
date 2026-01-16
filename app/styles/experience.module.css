@@ -11,3 +11,12 @@
     text-align: center;
     color: var(--accent-green);
 }
+.year{
+    font-size: 0.9rem;
+    font-style: italic;
+
+}
+.course{
+    color: var(--accent-green);
+    font-weight: 500;
+}
