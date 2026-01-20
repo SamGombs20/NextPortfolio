@@ -9,15 +9,29 @@
     font-size: 3.8rem;
     font-weight: 600;
     text-align: center;
-    color: var(--accent-green);
+    color: var(--accent-orange);
+}
+.education .experience{
+    min-width: 250px;
 }
 .year{
     font-size: 0.9rem;
     font-style: italic;
+    margin-bottom: 1rem;
 
 }
-.course{
+.main_text{
     color: var(--accent-green);
     font-weight: 500;
     font-size: 1.3rem;
+}
+.sub_container{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
 }
