@@ -7,7 +7,7 @@
     font-size: 3.8rem;
     font-weight: 600;
     text-align: center;
-    color: var(--accent-orange);
+    color: var(--accent-green);
 }
 .education .experience{
     min-width: 250px;
@@ -19,7 +19,7 @@
 
 }
 .main_text{
-    color: var(--accent-green);
+    color: var(--accent-orange);
     font-weight: 500;
     font-size: 1.3rem;
 }
