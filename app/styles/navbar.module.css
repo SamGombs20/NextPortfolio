@@ -9,6 +9,7 @@
     margin: 0 auto;
     left: 0;
     right: 0;
+    z-index: 1000;
 }
 
 .navbar {
@@ -78,7 +79,7 @@
     color: var(--accent-orange);
 }
 
-@media (max-width:628px) {
+@media (max-width:737px) {
     .nav_contact {
         display: none;
     }
