@@ -25,6 +25,8 @@
     /* border-radius: 1rem; */
     transition: all 0.4s ease-in-out;
     cursor: pointer;
+    position: relative;
+    z-index: -1;
 }
 /* .project_container:hover{
     transform: scale(1.1);
