@@ -1,6 +1,10 @@
+'use client'
 import Image from "next/image";
 import style from "../styles/projects.module.css";
 export const Projects = () => {
+    const handleClick =(link:string)=>{
+        window.open(link, "_blank", "noopener noreferrer")
+    }
   return (
     <div className={style.main}>
       <div className={style.projects_container}>
@@ -20,7 +24,7 @@ export const Projects = () => {
                 <p className={style.project_title}>ObesiScan</p>
             </div>
           </div> */}
-          <div className={style.project_container}>
+          <div className={style.project_container} onClick={() => handleClick("https://obesi-scan-web.vercel.app/")}>
             <div className={style.image_wrapper}>
               <Image
                 src="/obesi_web.png"
@@ -34,7 +38,7 @@ export const Projects = () => {
               <div className={style.overlay}>
                 <div className={style.overlay_content}>
                   
-                  <span className={style.view_btn}>View Project →</span>
+                  <span className={style.view_btn}>See Project →</span>
                 </div>
               </div>
             </div>
@@ -45,7 +49,7 @@ export const Projects = () => {
               <p className={style.project_title}>ObesiScan</p>
             </div>
           </div>
-          <div className={style.project_container}>
+          <div className={style.project_container} onClick={()=> handleClick("https://coursetrackerweb.netlify.app/")}>
            <div className={style.image_wrapper}>
               <Image
                 src="/course_web.png"
@@ -59,7 +63,7 @@ export const Projects = () => {
               <div className={style.overlay}>
                 <div className={style.overlay_content}>
                   
-                  <span className={style.view_btn}>View Project →</span>
+                  <span className={style.view_btn}>See Project →</span>
                 </div>
               </div>
             </div>
@@ -68,7 +72,7 @@ export const Projects = () => {
               <p className={style.project_title}>Course Tracker</p>
             </div>
           </div>
-          <div className={style.project_container}>
+          <div className={style.project_container} onClick={()=> handleClick("https://github.com/SamGombs20/ObesityApp/blob/master/ObesiScan.mp4")}>
            <div className={style.image_wrapper}>
               <Image
                 src="/obesi_mobile.png"
@@ -82,7 +86,7 @@ export const Projects = () => {
               <div className={style.overlay}>
                 <div className={style.overlay_content}>
                   
-                  <span className={style.view_btn}>View Project →</span>
+                  <span className={style.view_btn}>See Project →</span>
                 </div>
               </div>
             </div>
