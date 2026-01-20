@@ -19,6 +19,9 @@
     flex-wrap: wrap;
     margin-top: 6rem;
 }
+.project_list div{
+    background-color: white;
+}
 .project_container{
     max-width: 350px;
     background-color: white;
@@ -26,7 +29,8 @@
     transition: all 0.4s ease-in-out;
     cursor: pointer;
     position: relative;
-    z-index: -1;
+    overflow: hidden;
+    /* z-index: -1; */
 }
 /* .project_container:hover{
     transform: scale(1.1);
