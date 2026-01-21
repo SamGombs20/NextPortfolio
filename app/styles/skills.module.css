@@ -1,0 +1,8 @@
+.main{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.title{
+    text-align: right;
+    color: var(--accent-green);
+}
