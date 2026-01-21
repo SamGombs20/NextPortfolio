@@ -40,3 +40,29 @@
     font-size: 1.3rem;
     gap: 0.5rem;
 }
+.icon_wrapper{
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.icon_wrapper:hover{
+    color: var(--accent-green);
+}
+.tooltip{
+    visibility: hidden;
+    /* text-align: center; */
+    padding-top:0.5rem;
+    font-size: 0.75rem;
+    position: absolute;
+    z-index: 1;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* white-space:nowrap; */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.icon_wrapper:hover .tooltip{
+    visibility: visible;
+    opacity: 1;
+}

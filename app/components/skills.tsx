@@ -6,7 +6,7 @@ import { SiAndroidstudio, SiFastapi, SiJetpackcompose, SiJira, SiKotlin, SiMui, 
 import { MdOutlineWeb } from "react-icons/md";
 import { TbApi, TbFileTypeXml } from "react-icons/tb";
 import { FaTools } from "react-icons/fa";
-import { VscCode } from "react-icons/vsc";
+import { VscVscode } from "react-icons/vsc";
 import { IoLogoFirebase } from "react-icons/io5";
 export const Skills = () => {
   return (
@@ -20,14 +20,38 @@ export const Skills = () => {
               <p className={style.skill_title}>Frontend</p>
             </div>
             <div className={style.skill_icons}>
-                <FaReact/>
-                <RiNextjsLine/>
-                <BiLogoTypescript/>
-                <RiJavascriptLine/>
-                <SiMui/>
-                <FaHtml5/>
-                <FaCss3/>
-                <FaBootstrap/>
+                <div className={style.icon_wrapper}>
+                    <FaReact/>
+                    <span className={style.tooltip}>React</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <RiNextjsLine/>
+                    <span className={style.tooltip}>NextJS</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <BiLogoTypescript/>
+                    <span className={style.tooltip}>Typescript</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <RiJavascriptLine/>
+                    <span className={style.tooltip}>Javascript</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <SiMui/>
+                    <span className={style.tooltip}>MUI</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <FaHtml5/>
+                    <span className={style.tooltip}>HTML5</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <FaCss3/>
+                    <span className={style.tooltip}>CSS</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <FaBootstrap/>
+                    <span className={style.tooltip}>Bootstrap</span>
+                </div>
             </div>
           </div>
           <div className={style.skill}>
@@ -36,10 +60,22 @@ export const Skills = () => {
                 <p className={style.skill_title}>Backend</p>
             </div>
             <div className={style.skill_icons}>
-                <FaPython/>
-                <SiFastapi/>
-                <BiLogoPostgresql/>
-                <TbApi/>
+                <div className={style.icon_wrapper}> 
+                    <FaPython/>
+                    <span className={style.tooltip}> Python</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <SiFastapi/>
+                    <span className={style.tooltip}>FastAPI</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <BiLogoPostgresql/>
+                    <span className={style.tooltip}>Postgres</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <TbApi/>
+                    <span className={style.tooltip}>REST</span>
+                </div>
             </div>
           </div>
           <div className={style.skill}>
@@ -48,11 +84,26 @@ export const Skills = () => {
                 <p className={style.skill_title}>Mobile</p>
             </div>
             <div className={style.skill_icons}>
-                <SiKotlin/>
-                <FaJava/>
-                <SiJetpackcompose/>
-                <SiSqlite/>
-                <TbFileTypeXml/>
+                <div className={style.icon_wrapper}>
+                    <SiKotlin/>
+                    <span className={style.tooltip}>Kotlin</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <FaJava/>
+                    <span className={style.tooltip}>Java</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <SiJetpackcompose/>
+                    <span className={style.tooltip}>Jetpack</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <SiSqlite/>
+                    <span className={style.tooltip}>SQLite</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <TbFileTypeXml/>
+                    <span className={style.tooltip}>XML</span>
+                </div>
             </div>
           </div>
           <div className={style.skill}>
@@ -62,7 +113,7 @@ export const Skills = () => {
             </div>
             <div className={style.skill_icons}>
                 <SiAndroidstudio/>
-                <VscCode/>
+                <VscVscode/>
                 <IoLogoFirebase/>
                 <SiSanity/>
                 <FaDocker/>
