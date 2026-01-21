@@ -5,9 +5,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 export const Footer = () => {
     const downloadResume = () => {
-        const fileId = "18_6JzMMAM9wH70GSaHqsDuy6npFkvD1V"
+        const fileId = "1YkDmLYcSWL7V_-NO4OVs_RZbEVGLZwP_"
         const directDownloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`
-
         const link = document.createElement('a');
         link.href = directDownloadUrl;
         link.download = 'Josh_resume.pdf'
