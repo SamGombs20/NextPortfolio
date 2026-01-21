@@ -4,8 +4,8 @@ import { CiMobile3 } from "react-icons/ci"
 import { LuBrainCircuit } from "react-icons/lu"
 export const Services = () => {
     return (
-        <div className={style.main}>
-            <div className={style.profession_container}>
+        <div className={style.main} id="services">
+            <div className={style.profession_container} >
                 <div className={`${style.profession} ${style.first}`}>
                     <p className={style.title}>What I Do</p>
                     <p>I build modern, responsive <em><strong>web</strong></em> and <em><strong>mobile</strong></em> applications that solve real problems and deliver great user experience. <br /> <br />

@@ -1,8 +1,8 @@
 import style from "../styles/experience.module.css";
 export const Experience = () => {
   return (
-    <div className={`${style.main}`}>
-      <div className={`${style.experience_container} main`}>
+    <div className={`${style.main}`} id="experience">
+      <div className={`${style.experience_container} main`} >
         <p className={style.title}>Education & Experience</p>
         <div className={style.sub_container}>
           <div className={style.education}>

@@ -18,13 +18,13 @@ const Navbar = () => {
                     <div className={`${style.responsive}`}>
                         <ul className={`${style.nav_items} ${open ? style.active : style.inactive}`}>
                             <li>
-                                <a href="#" className={style.nav_link}>SERVICES</a>
+                                <a href="#services" className={style.nav_link}>SERVICES</a>
                             </li>
                             <li>
-                                <a href="#" className={style.nav_link}>WORKS</a>
+                                <a href="#works" className={style.nav_link}>WORKS</a>
                             </li>
                             <li>
-                                <a href="#" className={style.nav_link}>EXPERIENCE</a>
+                                <a href="#experience" className={style.nav_link}>EXPERIENCE</a>
                             </li>
                         </ul>
                     </div>

@@ -6,8 +6,8 @@ export const Projects = () => {
         window.open(link, "_blank", "noopener noreferrer")
     }
   return (
-    <div className={style.main}>
-      <div className={style.projects_container}>
+    <div className={style.main} id="works">
+      <div className={style.projects_container} >
         <p className={`${style.title} title-text`}>My Latest Projects</p>
         <div className={style.projects_list}>
           {/* <div className={style.project_container}>
