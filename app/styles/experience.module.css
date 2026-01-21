@@ -1,12 +1,15 @@
-
+.main{
+    background-color: var(--primary-light);
+}
 .experience_container{
     padding-top: 6rem;
     padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .title{
     font-size: 3.8rem;
     font-weight: 600;
-    text-align: center;
     color: var(--accent-green);
 }
 .education .experience{
@@ -26,10 +29,8 @@
 .sub_container{
     display: flex;
     justify-content: space-evenly;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
     flex-wrap: wrap;
+    
     gap: 2rem;
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
