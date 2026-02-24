@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image";
 import style from "../styles/projects.module.css";
+import { projects } from "../data/projects";
 export const Projects = () => {
     const handleClick =(link:string)=>{
         window.open(link, "_blank", "noopener noreferrer")
@@ -24,11 +25,12 @@ export const Projects = () => {
                 <p className={style.project_title}>ObesiScan</p>
             </div>
           </div> */}
-          <div className={style.project_container} onClick={() => handleClick("https://obesi-scan-web.vercel.app/")}>
+          {projects.map((project, index)=>(
+            <div className={style.project_container} onClick={() => handleClick(project.link)} key={index}>
             <div className={style.image_wrapper}>
               <Image
-                src="/obesi_web.png"
-                alt="ObesiScan project screenshot"
+                src={project.imageSrc}
+                alt={`${project.title} screenshot`}
                 width={320}
                 height={290}
                 className={style.project_img}
@@ -45,11 +47,13 @@ export const Projects = () => {
 
            
             <div className={style.project_details}>
-              <p className={style.project_category}>Web application</p>
-              <p className={style.project_title}>ObesiScan</p>
+              <p className={style.project_category}>{project.category}</p>
+              <p className={style.project_title}>{project.title}</p>
             </div>
           </div>
-          <div className={style.project_container} onClick={()=> handleClick("https://coursetrackerweb.netlify.app/")}>
+          ))}
+          
+          {/* <div className={style.project_container} onClick={()=> handleClick("https://coursetrackerweb.netlify.app/")}>
            <div className={style.image_wrapper}>
               <Image
                 src="/course_web.png"
@@ -140,7 +144,7 @@ export const Projects = () => {
               <p className={style.project_category}>ML Model</p>
               <p className={style.project_title}>Stock Price Prediction</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
