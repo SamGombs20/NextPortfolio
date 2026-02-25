@@ -11,20 +11,6 @@ export const Projects = () => {
       <div className={style.projects_container} >
         <p className={`${style.title} title-text`}>My Projects</p>
         <div className={style.projects_list}>
-          {/* <div className={style.project_container}>
-            <Image
-              src="/obesi_web.png"
-              alt=""
-              width={320}
-              height={290}
-              className={style.project_img}
-            />
-            <div className={style.project_details}>
-                
-                <p className={style.project_category}>Web application</p>
-                <p className={style.project_title}>ObesiScan</p>
-            </div>
-          </div> */}
           {projects.map((project, index)=>(
             <div className={style.project_container} onClick={() => handleClick(project.link)} key={index}>
             <div className={style.image_wrapper}>
