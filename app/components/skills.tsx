@@ -112,12 +112,30 @@ export const Skills = () => {
                 <p className={style.skill_title}>Tools and Platforms</p>
             </div>
             <div className={style.skill_icons}>
-                <SiAndroidstudio/>
-                <VscVscode/>
-                <IoLogoFirebase/>
-                <SiSanity/>
-                <FaDocker/>
-                <SiJira/>
+                <div className={style.icon_wrapper}>
+                    <SiAndroidstudio/>
+                    <span className={style.tooltip}>Studio</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <VscVscode/>
+                    <span className={style.tooltip}>VSCode</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                     <IoLogoFirebase/>
+                     <span className={style.tooltip}>Firebase</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <SiSanity/>
+                    <span className={style.tooltip}>Sanity</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <FaDocker/>
+                    <span className={style.tooltip}>Docker</span>
+                </div>
+                <div className={style.icon_wrapper}>
+                    <SiJira/>
+                    <span className={style.tooltip}>Jira</span>
+                </div>
             </div>
           </div>
         </div>
