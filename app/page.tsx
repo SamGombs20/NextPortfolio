@@ -12,7 +12,7 @@ const sectionVariants: Variants = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.3, ease: "easeInOut" },
+    transition: { duration: 0.5, ease: "easeInOut" },
   },
 };
 const verticalVariants:Variants ={
@@ -20,7 +20,7 @@ const verticalVariants:Variants ={
   visible:{
     opacity:1,
     y:0,
-    transition:{duration:0.3, ease:"easeInOut"}
+    transition:{duration:0.5, ease:"easeInOut"}
   }
 }
 
