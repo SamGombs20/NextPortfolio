@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 export const Footer = () => {
     const downloadResume = () => {
-        const fileId = "1YkDmLYcSWL7V_-NO4OVs_RZbEVGLZwP_"
+        const fileId = "1kU21LaMwcApV2RzK333hwGcdFB0gmFm3"
         const directDownloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`
         const link = document.createElement('a');
         link.href = directDownloadUrl;
