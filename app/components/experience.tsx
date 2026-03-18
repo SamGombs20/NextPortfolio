@@ -17,7 +17,7 @@ export const Experience = () => {
               <p>Mutall Investment Company Ltd.</p>
             </div>
           <div className={style.experience}>
-              <p className={style.year}>Sep 2024 - Present</p>
+              <p className={style.year}>Sep 2024 - March 2026</p>
               <p className={style.main_text}>Software Engineer (Intern)</p>
               <p>Artlly Group Ltd.</p>
             </div>
